@@ -1,0 +1,247 @@
+:root{
+    --bg-color:#DE8A89;
+    --text-color:#DE8A89;
+    --color-black:#131313;
+    --non-active-color:#ECB9B8;
+    --color-white:#ffffff;
+    --first-card:#3E3C3D;
+    --second-card:#353334;
+    --third-card:#201E1F;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Regular.woff2") format('woff2'),
+    url("../fonts/Roboto-Regular.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Medium.woff2") format('woff2'),
+    url("../fonts/Roboto-Medium.woff") format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Bold.woff2") format('woff2'),
+    url("../fonts/Roboto-Bold.woff") format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto" ,"Arial", sans-serif;
+    background-color: var(--bg-color);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+
+.container {
+    max-width: 1040px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* SITE-HEADER */
+
+.site-header {
+    display: flex;
+    align-items: center;
+    margin-left: 190px;
+    margin-top:50px;
+}
+
+.ul-list {
+    display: flex;
+    align-items: center;
+    
+}
+
+.list-items {
+    list-style: none;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 59px;
+    color: var(--color-white);
+}
+
+.list-items~.list-items {
+    padding-left: 40px;
+color: var(--non-active-color);
+}
+
+
+/* PARAGRAPH-ITEM */
+
+
+
+.paragraph-item{
+    width: 620px;
+}
+
+.paragraph-item p{
+    padding: 0;
+    margin:0;
+    color: var(--color-white);
+}
+
+
+
+/* COLUMN */
+
+.column {
+    display: flex;
+    padding: 0;
+    margin:0;
+    position: relative;
+}
+
+.card {
+    width: 300px;
+    padding: 120px 45px;
+    margin-top: 60px;
+}
+
+.arrow-button-right{
+    position: absolute;
+    right: -100px;
+    background-color: var(--non-active-color);
+    top: 60px;
+    padding: 40px 45px;  
+    border: none;   
+    cursor: pointer;
+}
+
+.arrow-button-left{
+    position: absolute;
+    transform: rotateY(180deg);
+    left: -100px;
+    background-color: var(--non-active-color);
+    top: 60px;
+    border: none;
+    padding: 40px 45px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.two-arrow-buttons:hover{
+   background-color: whitesmoke;
+   opacity: 0.6;
+}
+
+
+
+
+/* CARD-1 */
+
+.card-1 {
+    background-color: var(--first-card);
+   
+}
+
+.items-main{
+    max-width: 100px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.name-item {
+    color:var(--text-color) ;
+    font-size: 20px;
+}
+
+.item-property{
+    color: var(--color-white);
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+/* BUTTON */
+
+.card-1-button{
+    width: 250px;
+    height: 60px;
+    align-items: center;
+    text-transform: uppercase;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    border-radius: 5px;
+    border: none;
+    position: absolute;
+    left: 25px;
+    bottom: -30px;
+    transition: all 0.3s ease;
+}
+
+.card-1-button:hover {
+    transform: translateY(-3px);
+    cursor: pointer;   
+}
+
+
+
+
+
+
+
+
+
+/* CARD-2 */
+.card-2{
+    background-color: var(--second-card);
+}
+
+
+
+/* CARD-3 */
+
+.card-3 {
+    background-color: var(--third-card);
+}
