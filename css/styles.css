@@ -90,15 +90,13 @@ img {
 
 .site-header {
     display: flex;
-    align-items: center;
-    margin-left: 190px;
+    align-items: center; 
     margin-top:50px;
 }
 
 .ul-list {
     display: flex;
-    align-items: center;
-    
+    align-items: center; 
 }
 
 .list-items {
